@@ -20,112 +20,132 @@ Create BEM structure.
 
 
 
-/* If bootstrap grid is needed. */
+CUSTOMIZE BOOTSTRAP GRID 
 
 
-/* 1. cd to bower_components and git clone bootstrap repository */
+1. cd to bower_components and git clone bootstrap repository
 
 
-		/* 22-06-14 git clone https://github.com/twbs/bootstrap.git */
+		– git clone https://github.com/twbs/bootstrap.git 
 
-/* 2. cd to bower_components/bootstrap and npm install */  
+2. cd to bower_components/bootstrap and npm install   
 
 
-/* 3. open bower_components/bootstrap/less/bootstrap.less and comment unnecesary dependencies */
+3. open bower_components/bootstrap/less/bootstrap.less and comment unnecesary dependencies */
 		
-		/* needed dependencies*/
+		– needed dependencies*/
 
-		/* @import "variables.less"; @import "mixins.less"; @import "grid.less"; @import "media.less"; @import "responsive-utilities.less"; @import "utilities.less";*/
+		– @import "variables.less"; @import "mixins.less"; @import "grid.less"; @import "media.less"; @import "responsive-utilities.less"; @import "utilities.less";
 
 
 
-/* 4. Customize Bootstrap. If bootstrap grid default classes are not wanted. */
-		/*http://stackoverflow.com/questions/18854927/using-mixins-in-bootstrap-3-to-avoid-unsemantic-markup-for-layout-structure*/
-		/* override bootstrap default in grid.less and variables.less was modified to add col-xs */
+4. Customize Bootstrap. If bootstrap grid default classes are not wanted.
+		– http://stackoverflow.com/questions/18854927/using-mixins-in-bootstrap-3-to-avoid-unsemantic-markup-for-layout-structure
+
+
+		– override bootstrap default in bootstrap/less/grid.less and bootstrap/less/variables.less was modified to add col-xs 
 		
 
-		/* variables.less around line 313  == Container sizes */
+				i. variables.less around line 313  == Container sizes 
 
-		/* Added: */
-		/* @container-phone:             ((420px + @grid-gutter-width)); */
-		/* @container-xs:                 @container-phone; */
+				 Added: 
+				 @container-phone:             ((420px + @grid-gutter-width)); 
+				 @container-xs:                 @container-phone; 
 
-		/* grid.less */
+				 grid.less 
 
-		/* line 28
-		@media (min-width: @screen-xs-min) {
-    		width: @container-xs;
-  		}
-  		*/
+				ii. line 28
 
-  		/* line 83
-		 @media (min-width: @screen-xs-min) {
-		  .make-grid(xs);
-		}
-		*/
+				 @media (min-width: @screen-xs-min) {
+		    		width: @container-xs;
+		  		 }
+		  		
 
-		/* in less/mixins/grid-framework.less line 21 // Inner gutter via padding*/
+  				iii. line 83
 
-		/*
-		  //padding-left:  (@grid-gutter-width / 2);
-	      //padding-right: (@grid-gutter-width / 2);
-	      padding-right: 0;
-	      padding-left: 0;
+				 @media (min-width: @screen-xs-min) {
+				  .make-grid(xs);
+				 }
+				
 
-		*/
-		/* in less/mixins/grid.less line 9 // container-fixed*/
+				iv. in less/mixins/grid-framework.less line 21 // Inner gutter via padding
 
-		/*
-		  //padding-left:  (@gutter / 2);
-		  //padding-right: (@gutter / 2);
-		  padding-right: 0;
-		  padding-left: 0;
+		
+			    //padding-left:  (@grid-gutter-width / 2);
+		        //padding-right: (@grid-gutter-width / 2);
+		        padding-right: 0;
+		        padding-left: 0;
 
-		*/
-		/* in less/grid.less line 9 // container-fixed*/
+		
+				v. in less/mixins/grid.less line 9 // container-fixed
 
-		/*
-		  .module-wrapper {
-		  .container-fixed();
-		  padding-left: 15px;
-		  padding-right: 15px;
-		}
-		.module-fluid {
-		  .container-fixed();
-		}
+		
+			  	//padding-left:  (@gutter / 2);
+			  	//padding-right: (@gutter / 2);
+			  	padding-right: 0;
+			  	padding-left: 0;
 
-		*/
+		
+				vi. in less/grid.less line 9 // container-fixed
+
+		
+			    .module-wrapper {
+
+		        .container-fixed();
+		  		padding-left: 15px;
+		  		padding-right: 15px;
+				
+				}
+
+				.module-fluid {
+		        .container-fixed();
+				}
+
+				vii. Custom classes are:
+
+				.module-wrapper (15px. padding)
+				.module-fluid (0px. padding)
 
 
-		/* For this example I use module-inner as container and module-wrapper for container-fluid */
+				.module inner (centered + breakpoints)
 
-/* 5. from bower_components/bootstrap do grunt dist and copy bower_components/bootstrap/bootstrap.css below */
+		
 
 
-/* 6. Modified generated css */ 
 
-		/*
-		@media (min-width: 320px) and (max-width: 479px ) {
-		  .module-inner {
-		    min-width: 300px;
-		    width:90%;
-		  }
-		}
-		@media (min-width: 480px) and (max-width: 767px ) {
-		  .module-inner {
-		    min-width: 450px;
-		    width:90%;
-		  }
-		}
-		*/
+5. from bower_components/bootstrap do grunt dist and copy bower_components/bootstrap/bootstrap.css below 
 
-		/*
-		.row{margin-left:0; margin-right:0;}
-		*/
 
-		/*
-		added lines 108 to 256
-		*/
+6. Modified generated css (TODO: find a way to generate from less)
+
+
+		– Provisionally 
+		
+				i. @media (min-width: 320px) and (max-width: 479px ) {
+				     .module-inner {
+				     min-width: 300px;
+				     width:90%;
+				     }
+				    }
+
+				ii. @media (min-width: 480px) and (max-width: 767px ) {
+				     .module-inner {
+				     min-width: 450px;
+				     width:90%;
+				     }
+				    }
+				
+
+				
+				iii. .row{margin-left:0; margin-right:0;}
+				
+
+				
+				iv. added lines 108 to 256
+
+
+7. Copy paste on partial/_grid.scss
+		
 
 
 
