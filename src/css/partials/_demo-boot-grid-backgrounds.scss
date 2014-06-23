@@ -1,0 +1,199 @@
+/* Background Colors for bootstrap grid
+-------------------------------------------------- */
+
+
+.demo{
+
+  &.module-fluid{
+    background-color: #0000ff;
+
+    .module-inner{
+    background-color: #001199;
+
+      & > .row{
+
+        &:first-child{
+        background-color: #009911;
+
+        }
+        & > .col-lg-6{
+
+          &:first-child{
+          background-color: #00aa99;
+
+          }
+        
+        }
+        
+      }
+
+    }
+
+
+  }
+
+
+
+
+
+
+  &.module-wrapper{
+    background-color: #ffff00;
+
+    .module-inner{
+    background-color: #999911;
+
+      & > .row{
+
+        &:first-child{
+        background-color: #009911;
+        margin-left:-15px;
+        margin-right:-15px;
+
+          div[class*='col-']{
+
+              &:first-child{
+              padding-left:0px;
+              background-color: #aaaa99;
+
+            }
+              &:last-child{
+              padding-right:0px;
+
+              background-color: #993333;
+            }
+
+          }
+
+        }
+        
+        & > .col-lg-6{
+
+          &:first-child{
+          background-color: #00aa99;
+
+          }
+        
+        }
+
+        
+      }
+
+    }
+  
+  }
+
+
+
+    
+  
+
+}
+
+
+.module-inner{
+
+  .demo-outer &{
+    background-color:#ccc;
+
+    color:#0000ff;
+    .row{
+      border:1px solid #009911;
+      &.strech{
+        margin-left:-15px;
+        margin-right:-15px;
+        border:1px solid #990011;
+
+       
+
+      }
+      &.strechch{
+        margin-left:-15px;
+        margin-right:-15px;
+        padding-left:15px;
+        padding-right:15px;
+        border:1px solid #ff0000;
+      } 
+    }
+  }
+}
+
+
+
+
+div[class*='col-']{
+
+    &:first-child{
+    padding-left:0px;
+    background-color: #aaaa99;
+
+    .module-fluid .module-inner .strech &{
+      padding-left:0px;
+      background-color: #aaaa99;
+
+    }
+
+  }
+    &:last-child{
+    padding-right:0px;
+
+    background-color: #993333;
+
+    .module-fluid .module-inner .strech &{
+      padding-right:0px;
+      background-color: #aaaa99;
+
+    }
+  }
+
+}
+
+@media (max-width: 479px ) {
+  .strech {
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .strechch {
+    margin-left:0px;
+    margin-right:0px;
+    padding-left:0px;
+    padding-right:0px;
+  }
+  .module-inner{
+
+    .demo-outer &{
+      background-color:#ccc;
+
+      color:#0000ff;
+      .row{
+        border:1px solid #009911;
+        &.strech{
+          margin-left:0px;
+          margin-right:0px;
+          border:1px solid #990011;
+
+         
+
+        }
+        &.strechch{
+          margin-left:0px;
+          margin-right:0px;
+          padding-left:0px;
+          padding-right:0px;
+          border:1px solid #ff0000;
+        } 
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,132 @@
+Dev-test newb env setup from Matt Bailey's distribution https://github.com/matt-bailey/generator-bones.
+
+Testing horizontal distribution using Bootstrap's grid and converted to sass. Added holder.js to see placeholder's dimentions of percentage widths as rendered to units.
+
+Added respond.js and htmlshiv for IE support
+
+Added sticky footer
+
+TODO 
+
+Vertical Rythm with scss
+
+Ease pixel oriented widths...
+
+Integrate layout (Horizontal distribution with bootstrap's grid Vertical rythm and Typography to em)
+
+Create basic SMACSS structure of styles.
+
+Create BEM structure. 
+
+
+
+/* If bootstrap grid is needed. */
+
+
+/* 1. cd to bower_components and git clone bootstrap repository */
+
+
+		/* 22-06-14 git clone https://github.com/twbs/bootstrap.git */
+
+/* 2. cd to bower_components/bootstrap and npm install */  
+
+
+/* 3. open bower_components/bootstrap/less/bootstrap.less and comment unnecesary dependencies */
+		
+		/* needed dependencies*/
+
+		/* @import "variables.less"; @import "mixins.less"; @import "grid.less"; @import "media.less"; @import "responsive-utilities.less"; @import "utilities.less";*/
+
+
+
+/* 4. Customize Bootstrap. If bootstrap grid default classes are not wanted. */
+		/*http://stackoverflow.com/questions/18854927/using-mixins-in-bootstrap-3-to-avoid-unsemantic-markup-for-layout-structure*/
+		/* override bootstrap default in grid.less and variables.less was modified to add col-xs */
+		
+
+		/* variables.less around line 313  == Container sizes */
+
+		/* Added: */
+		/* @container-phone:             ((420px + @grid-gutter-width)); */
+		/* @container-xs:                 @container-phone; */
+
+		/* grid.less */
+
+		/* line 28
+		@media (min-width: @screen-xs-min) {
+    		width: @container-xs;
+  		}
+  		*/
+
+  		/* line 83
+		 @media (min-width: @screen-xs-min) {
+		  .make-grid(xs);
+		}
+		*/
+
+		/* in less/mixins/grid-framework.less line 21 // Inner gutter via padding*/
+
+		/*
+		  //padding-left:  (@grid-gutter-width / 2);
+	      //padding-right: (@grid-gutter-width / 2);
+	      padding-right: 0;
+	      padding-left: 0;
+
+		*/
+		/* in less/mixins/grid.less line 9 // container-fixed*/
+
+		/*
+		  //padding-left:  (@gutter / 2);
+		  //padding-right: (@gutter / 2);
+		  padding-right: 0;
+		  padding-left: 0;
+
+		*/
+		/* in less/grid.less line 9 // container-fixed*/
+
+		/*
+		  .module-wrapper {
+		  .container-fixed();
+		  padding-left: 15px;
+		  padding-right: 15px;
+		}
+		.module-fluid {
+		  .container-fixed();
+		}
+
+		*/
+
+
+		/* For this example I use module-inner as container and module-wrapper for container-fluid */
+
+/* 5. from bower_components/bootstrap do grunt dist and copy bower_components/bootstrap/bootstrap.css below */
+
+
+/* 6. Modified generated css */ 
+
+		/*
+		@media (min-width: 320px) and (max-width: 479px ) {
+		  .module-inner {
+		    min-width: 300px;
+		    width:90%;
+		  }
+		}
+		@media (min-width: 480px) and (max-width: 767px ) {
+		  .module-inner {
+		    min-width: 450px;
+		    width:90%;
+		  }
+		}
+		*/
+
+		/*
+		.row{margin-left:0; margin-right:0;}
+		*/
+
+		/*
+		added lines 108 to 256
+		*/
+
+
+
+
