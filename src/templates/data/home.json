@@ -1,19 +1,35 @@
 {
 	"title" : "Home",
+	"css":[
+		{
+			"rel":"stylesheet",
+			"href":"css/styles.css"
+		}
+	] ,
+	"slogan" : "Oh Lou, I'll be your mirror.",
 	"quotes":[
 		{
 			"author": "Joseph Conrad",
 			"quote":"here was a table in the middle of the room, plain chairs lined up on the walls, and at one end, a large map marked with all the colors of the rainbow. There was a vast amount of red on the map, which was good to see because it meant that something good was happening in those places. There was a lot of blue, a little green, some smears of orange, and, on the East Coast, a purple patch showing where happy pioneers were drinking lager. But I wasn’t going to any of those places. I was going into the yellow. It was dead in the center of the map. And the river was there, as fascinating and deadly as a snake." ,
 			"comments": [
-				{ "RED ON THE MAP" :"on maps of the time, countries that were part of the British Empire were marked in red " },
-				{ "A LOT OF BLUE" : "indicating countries that were part of the French Empire " },
-				{ "A LITTLE GREEN" : "indicating countries that were part of the Italian Empire " },
-				{ "SOME SMEARS OF ORANGE": " indicating countries that were part of the Portuguese Empire" },
-				{ "A PURPLE PATCH": "indicating German East Africa" },
-				{ "THE YELLOW" : "indicating the Congo Free State, under the control of Belgium’s King Leopold II" }
+			{
+				 "RED ON THE MAP" :"on maps of the time, countries that were part of the British Empire were marked in red " ,
+				 "A LOT OF BLUE" : "indicating countries that were part of the French Empire " ,
+				 "A LITTLE GREEN" : "indicating countries that were part of the Italian Empire " ,
+				 "SOME SMEARS OF ORANGE": " indicating countries that were part of the Portuguese Empire" ,
+				 "A PURPLE PATCH": "indicating German East Africa" ,
+				 "THE YELLOW" : "indicating the Congo Free State, under the control of Belgium’s King Leopold II" 
+			}
+			
 			]
+		},
+		{
+			"author": "Michel Foucault",
+			"quote":"In the mirror, I see myself there where I am not, in an unreal, virtual space that opens up behind the surface; I am over there, there where I am not, a sort of shadow that gives my own visibility to myself, that enables me to see myself there where I am absent: such is the utopia of the mirror." 
+			
 		}
-	],
+		
+	] ,
 	"resizeStop":
 	[
 		{ 

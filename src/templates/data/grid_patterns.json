@@ -1,0 +1,10 @@
+{
+	"title" : "Grid patterns",
+	"css":[
+		{
+			"rel":"stylesheet",
+			"href":"css/home_styles.css"
+		}
+	]
+	
+}

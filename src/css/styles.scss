@@ -1,5 +1,9 @@
 @charset "UTF-8";
 body { margin: 0; }
 
-//@import 'partials/sticky-footer';
-//@import 'partials/demo-boot-grid-backgrounds';
+@import 'partials/grid';
+@import 'partials/sticky-footer';
+
+
+@import 'modules/header-brand';
+@import 'modules/slogan';

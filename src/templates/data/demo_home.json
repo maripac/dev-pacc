@@ -1,0 +1,10 @@
+{
+	"title" : "Demo Home",
+	"css":[
+		{
+			"rel":"stylesheet",
+			"href":"css/home_styles.css"
+		}
+	]
+	
+}

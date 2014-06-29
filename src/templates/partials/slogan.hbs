@@ -1,0 +1,14 @@
+<div>
+<h2 class="slogan">{{page.slogan}}</h2>
+</div>
+
+{{#each page.quotes}}
+{{#is this.author 'Michel Foucault'}}
+
+        <p>{{ this.quote }}</p>
+{{/is}}
+        
+
+{{/each}}
+
+

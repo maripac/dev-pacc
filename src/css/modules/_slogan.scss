@@ -1,0 +1,19 @@
+.slogan{
+    font-family: 'arvoitalic';
+    text-align: center;
+    font-size: 225%;
+    padding-top: 0.335em;
+    line-height: 1.325em;
+    padding-bottom: 0.385em;
+    margin-bottom:0.575em;
+    margin-top:0.625em;
+    color: #008;
+    width: 91.125%;
+    //max-width: $body-width;
+    margin-left:auto;
+    margin-right:auto;
+    &:hover{
+        //border:1px solid blue;
+    }
+    
+}
