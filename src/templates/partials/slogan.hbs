@@ -1,14 +1,133 @@
-<div>
-<h2 class="slogan">{{page.slogan}}</h2>
-</div>
+{{#is page.title 'Home'}}
+	<div class="row">
 
-{{#each page.quotes}}
-{{#is this.author 'Michel Foucault'}}
+		<div class="module-match">
+			
+			  <div class="bullet_entry icon-asterisk-2">
+			  </div> 
+		</div><!-- // .module-match-->
 
-        <p>{{ this.quote }}</p>
+		<h2 class="slogan">{{page.slogan}}</h2>
+
+	</div>
+
 {{/is}}
-        
 
-{{/each}}
+
+<div class="module-inner">
+	<div class="module-wrapper">
+
+
+
+	{{#is page.title 'Home Lite'}}
+	<div class="row">
+
+			<!--<div class="module-match">
+				<div class="bullet_entry icon-asterisk-2 lite"></div> 
+			</div>--><!-- // .module-match-->
+			
+			<h2 class="slogan">{{page.slogan}}</h2>
+
+	</div><!-- // .row -->
+
+	<div class="row utopia">
+		<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+		<div class="utopia">
+
+
+		{{>utopia}}
+		
+		</div>
+		</div>
+
+		{{#each page.quotes}}
+		{{#is this.author 'Michel Foucault'}}
+		<div class="quote_common col-lg-offset-1 col-lg-5 col-md-offset-1 col-md-5 col-sm-6 col-xs-12">
+			<q>{{ this.quote }}</q> 
+		</div>	        
+		{{/is}}
+		{{/each}}
+	</div><!-- // .row -->
+
+	<div class="row moloch">
+		<div class="moloch">
+
+		{{>moloch}}
+
+		</div>
+	</div><!-- // .row -->
+
+
+	{{/is}}
+
+	<div class="row">
+		
+
+		<div class="col-md-8 col-sm-8 col-xs-8">
+			<div class="mirror">
+
+			{{>mirror}}
+			</div>
+		 
+		</div>
+
+
+		{{#each page.quotes}}
+		{{#is this.author 'Michel Foucault'}}
+		<div class="quote_common col-md-4 col-sm-4 col-xs-4">
+			<q>{{ this.quote }}</q> 
+		</div>	        
+		{{/is}}
+		{{/each}}
+
+	</div><!-- // .row -->
+
+
+	<div class="row">
+		<div class="col-md-8 col-sm-8 col-xs-8">
+
+
+			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+			    <!--<path d="M50,50
+			             A30,30 0 1,1 35,20" style="stroke:#00ff00; fill:none;"/>
+			    <path d="M50,50
+			             A30,30 0 0,1 35,20" style="stroke:#660000; fill:none;"/>
+	            <path d="M50,50
+			             A30,30 0 1,0 35,20" style="stroke:#ff0000; fill:none;"/>
+	            <path d="M50,50
+			             A30,30 0 0,0 35,20" style="stroke:#0000ff; fill:none;"/>-->
+
+
+
+
+	             <defs>
+				    <marker id="markerCircle" markerWidth="8" markerHeight="8" refx="5" refy="5">
+				        <circle cx="5" cy="5" r="2" style="stroke: none; fill:#000;"/>
+				    </marker>
+
+				    <marker id="markerArrow" markerWidth="13" markerHeight="13" refx="2" refy="6"
+				           orient="auto">
+				        <path d="M2,2 L2,11 L10,6 L2,2" style="fill:#000;" />
+				    </marker>
+				</defs>
+
+				<path d="M150,150 A90,90 0 1,1 250,250" style="stroke: #000; stroke-width: 3px; fill: none;
+				                   marker-start: url(#markerCircle);
+				                   marker-end: url(#markerArrow);" />    
+			</svg>
+
+			
+		</div><!-- // .col-->
+		<div class="col-md-4 col-sm-4 col-xs-4">
+			
+		</div><!-- // .col-->
+
+	</row><!-- // .row -->
+
+</div>
+</div><!-- // .module-inner-->
+
+
 
 

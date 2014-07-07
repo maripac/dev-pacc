@@ -2,8 +2,7 @@
 body { margin: 0; }
 
 @import 'partials/grid';
+@import 'partials/vertical_rythm';
+@import 'partials/horizontal_rythm';
 @import 'partials/sticky-footer';
-
-
-@import 'modules/header-brand';
-@import 'modules/slogan';
+@import 'partials/branding';

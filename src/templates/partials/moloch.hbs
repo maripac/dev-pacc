@@ -1,0 +1,100 @@
+
+	<svg id="moloch" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 721">
+		<pattern id="pattern" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewBox="0 0 10 10">
+			<path d="M-5,0,10,15M0-5,15,10" stroke="#ccc" stroke-width="2" />
+		</pattern>
+
+		<pattern id="pattern2" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewBox="0 0 10 10">
+			<path d="M-5,0,10,15M0-5,15,10" stroke="#000" stroke-width="2" />
+		</pattern>
+
+		<pattern id="pattern3" patternUnits="userSpaceOnUse" x="0" y="0" width="10" height="10" viewBox="0 0 10 10">
+			<path d="M-5,0,10,15M0-5,15,10" stroke="#000" stroke-width="4" />
+		</pattern>
+
+		<defs>
+		    <clipPath id="clipPath3">
+		        <path d="M280,2 C280,2 270,22 245,45 C245,45 240,60 258,65 C258,64 265,60 270,50 C270,50 275,40 295,30 C295,30 335,25 292,55" style="stroke:#ff0000; fill:none; stroke-width: 3px;"/>
+		    </clipPath>
+		</defs>
+
+
+
+		<!--<path d="M150,2 A270,260 0 1,0 540,2 Z
+
+				M130,2 A300,280 0 1,0 560,2 " 
+
+			style="stroke:#0000ff; fill:none;"/>-->
+
+		 
+		<!--<path d="M150,2 A270,260 0 1,0 540,2 
+		M540,2 A270,260 0 1,1 150,2 
+				M459,418 A225,240 0 0,0 500,2 " 
+M130,2 A300,280 0 1,0 560,2 L500,2    A225,240 0 0,1 459,418
+			style="stroke:#0000ff; fill:none;"/>-->
+			<path d="M500,2 
+				A260,250 0 1,1 150,2 
+				L130,2 
+				A300,280 0 1,0 560,2 
+				Z" 
+
+			style="stroke:#0000ff; stroke-width:0px; fill:url(#pattern2);"/>
+
+			<path d="M150,2 
+				A270,260 0 1,0 540,2 
+				L500,2
+				A260,250 0 1,1 150,2" 
+
+			style="stroke:#0000ff; stroke-width:0px; fill:url(#pattern3);"/>
+
+			<path d="M600,170  
+				C600,170 580,210 490,180 
+				L470,200 
+				C470,200 465,205 450,208 
+				L410,208 
+				C410,208 360,212 350,230 
+				C350,230 345,190 310,210
+				C310,210 300,220 298,210
+				C298,210 290,200 288,220
+				C288,220 298,266 348,240
+				C348,240 278,290 280,430" 
+
+			style="stroke:#0000ff; stroke-width:3px; fill:none;"/>
+
+			<path d="M600,170  
+				C600,170 580,210 490,180 
+				L470,200 
+				C470,200 520,220 518,278
+				C518,278 516,288 506,282" 
+
+			style="stroke:#ff0000; stroke-width:3px; fill:none;"/>
+
+			
+
+			<!--<path d="
+			M540,2 C540,2 830,390 280,412
+			
+			   
+				 " 
+
+			style="stroke:#ff0000; stroke-width:5px; fill:none;"/>-->
+
+
+
+
+	<!--<path d="M-200,60 C-200,60 -220,150 -190,400 C-190,400 -200,180 -170,80 L-165,2 Z" style="stroke:#0000ff; fill:none; stroke-width:3px;"/> -->
+
+
+
+	<!--
+	<path d="M50,50
+	         A30,30 0 0,0 35,20" style="stroke:#0000ff; fill:none;"/>-->
+
+	{{#if page.d3}}
+
+	<!-- build:js {{page.d3}} -->
+	<script src="{{page.d3}}"></script>
+	<!-- endbuild -->
+
+	{{/if}}
+	</svg>			

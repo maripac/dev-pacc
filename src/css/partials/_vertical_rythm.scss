@@ -1,0 +1,349 @@
+$baseline: 24px;
+
+@mixin baseline-grid {
+  $columns: 12;
+  $column-color: rgba(200,0,0,.2);
+  $baseline-color: rgba(56,255,255,.8);
+  
+  // These are all automatically calculated
+  $gutter-width: 20px;  // Change if you like
+  $gutters: ($columns - 1);
+  //$column-width: $body-width / $columns;
+  $column-width: 60px;
+  
+  background-image: -webkit-linear-gradient(0deg, $column-color $column-width, transparent $gutter-width),
+              -webkit-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+  background-image: -moz-linear-gradient(0deg, $column-color $column-width, transparent $gutter-width),
+              -moz-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+  background-image: -o-linear-gradient(0deg, $column-color $column-width, transparent $gutter-width),
+              -o-linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+  background-size: 80px 100%,100% 21px;
+  background-position: 10px 0px; // Use to offset and center your grid
+}
+
+
+
+
+//CABECERA IMAGEN PORTADA
+.outer-wrap{
+  font-size: 16px;
+  line-height: 0.625em;
+}
+
+.wrap{
+  height: auto;   
+  
+  img{ height:auto; }
+
+}
+
+.inner-wrap {
+    height:auto;
+    bottom:0;
+    top:0;
+    margin-top:20px;
+    margin-bottom:0px;
+
+  h1{
+
+      font-size: 18px; 
+      bottom:0px;
+      margin-bottom:0.925em;
+      padding-bottom:0px;
+      line-height: 1.0125em;
+      @media all and (max-width: 515px){
+      
+        padding-top: 0.795em;
+        padding-bottom: 0.775em;
+        margin-bottom: 0;
+      
+      }
+    }
+    
+}
+//CONTAINER TO SET LEFT MARGIN alignment relative to distimming
+.module-match{
+  overflow: hidden;
+    
+
+    .bullet_entry{
+        margin-top:18px;
+        height:62px;
+    } 
+  
+    
+}
+.module-inner{
+  &:hover
+    {
+      //@include baseline-grid;
+    }
+}
+.module-wrapper{
+  &:hover
+    {
+      @include baseline-grid;
+    }
+}
+
+
+
+
+//CABECERA LITE
+.lite{
+  font-size: 16px;
+  line-height: 0.625em;
+}
+
+.inner-wrap-lite {
+    height:auto;
+    padding-top:14.9em;
+
+  h1{
+      padding-top:3.9em;
+      padding-bottom:2px;
+      font-size: 18px; 
+      margin-bottom:0.925em;
+      line-height: 1.0125em;
+      
+    }
+    
+}
+
+
+
+.module{
+  &:hover
+    {
+      @include baseline-grid;
+      //@include baseline-grid;
+    }
+}
+
+
+.slogan{
+    font-size: 225%;
+    line-height: 1.325em;
+    padding-top: 0.335em;
+    padding-bottom: 0.385em;
+    margin-bottom:0.575em;
+    margin-top:0.625em;
+    &:hover{
+    }
+    
+}
+//QUOTES
+
+/*.quote_common{ 
+
+
+  overflow:hidden;
+   q{
+    //font-size: 1.125em;//18px
+    //line-height: 1.35em;//24px
+    font-size:1.5em; //24px
+    line-height:1.25em; //30px
+    padding-bottom:.975em;
+    &::before{
+      font-size:36px;
+      line-height:0.25em;
+      position:relative;
+      top:0.25em;
+        
+    }
+    
+  }
+  &.col-lg-offset-1{
+    q{
+    padding-top:3.975em;
+    color:#006;
+    font-family: sans-serif;
+    font-size:1.125em;
+    }
+    
+  }
+}*/
+
+@media (min-width:961px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:1.025em;
+      padding-left:1em;
+      //padding-right:1.5em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1.215em;
+      &::before{
+          font-size:26px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}
+@media (max-width: 960px) and (min-width:721px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:0.025em;
+      padding-left:1em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1em;
+      &::before{
+          font-size:26px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}
+
+@media (max-width: 720px) and (min-width:481px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:0em;
+     // padding-left:1em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1em;
+      &::before{
+          font-size:26px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}
+
+@media (max-width: 480px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:2.025em;
+      //padding-left:1em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1em;
+      &::before{
+          font-size:26px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}
+
+/*@media (max-width: 320px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:4.125em;
+      //padding-left:1em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1em;
+      &::before{
+          font-size:26px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}*/
+/*@media (max-width: 991px) and (min-width: 769px) {
+  .quote_common{ 
+    &.col-lg-offset-1{
+      q{
+      padding-top:1.125em;
+      padding-left:1em;
+      color:#006;
+      font-family: sans-serif;
+      font-size:1.0125em;
+      &::before{
+          font-size:28px;
+          line-height:0.25em;
+          position:relative;
+          top:0.25em;
+            
+        }
+      }
+      
+    }
+
+  }
+
+}*/
+
+//MIRROR
+.mirror{
+ // margin-top:32px;
+    
+ #velvet-underground{
+    
+    
+ }
+}
+
+//MOLOCH
+.row.moloch{
+  margin-top:32px;
+  & + .row{
+     margin-top:64px;
+  }
+    
+ #moloch{
+    
+    
+ }
+}
+
+//UTOPIA
+.row.utopia{
+  margin-top:32px;
+  & + .row{
+     margin-top:64px;
+  }
+    
+ #utopia{
+    
+    
+ }
+}
+
+
+
+
+

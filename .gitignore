@@ -3,3 +3,7 @@ build
 .tmp
 .sass-cache
 src/bower_components
+*.DS_Store
+src/images/moloch-1024x721-2.png
+src/images/moloch-1024x721.jpg
+src/images/mirror620x469.png
