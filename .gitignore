@@ -2,7 +2,7 @@ node_modules
 build
 .tmp
 .sass-cache
-src/bower_components
+bower_components
 *.DS_Store
 src/images/moloch-1024x721-2.png
 src/images/moloch-1024x721.jpg
