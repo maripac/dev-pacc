@@ -56,3 +56,68 @@
     font-style: normal;
 
 }
+
+
+
+
+
+
+@font-face {
+    font-family: 'alte_haas_groteskbold';
+    src: url('../fonts/altehaasgroteskbold-webfont.eot');
+    src: url('../fonts/altehaasgroteskbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/altehaasgroteskbold-webfont.woff2') format('woff2'),
+         url('../fonts/altehaasgroteskbold-webfont.woff') format('woff'),
+         url('../fonts/altehaasgroteskbold-webfont.ttf') format('truetype'),
+         url('../fonts/altehaasgroteskbold-webfont.svg#alte_haas_groteskbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'alte_haas_groteskregular';
+    src: url('../fonts/altehaasgroteskregular-webfont.eot');
+    src: url('../fonts/altehaasgroteskregular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/altehaasgroteskregular-webfont.woff2') format('woff2'),
+         url('../fonts/altehaasgroteskregular-webfont.woff') format('woff'),
+         url('../fonts/altehaasgroteskregular-webfont.ttf') format('truetype'),
+         url('../fonts/altehaasgroteskregular-webfont.svg#alte_haas_groteskregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+@font-face {
+    font-family: 'fedraserifb_bookexpertregular';
+    src: url('../fonts/fedraserifb-bookexpert_17359-webfont.eot');
+    src: url('../fonts/fedraserifb-bookexpert_17359-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/fedraserifb-bookexpert_17359-webfont.woff2') format('woff2'),
+         url('../fonts/fedraserifb-bookexpert_17359-webfont.woff') format('woff'),
+         url('../fonts/fedraserifb-bookexpert_17359-webfont.ttf') format('truetype'),
+         url('../fonts/fedraserifb-bookexpert_17359-webfont.svg#fedraserifb_bookexpertregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'isminiregular';
+    src: url('../fonts/ismini_24378-webfont.eot');
+    src: url('../fonts/ismini_24378-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ismini_24378-webfont.woff2') format('woff2'),
+         url('../fonts/ismini_24378-webfont.woff') format('woff'),
+         url('../fonts/ismini_24378-webfont.ttf') format('truetype'),
+         url('../fonts/ismini_24378-webfont.svg#isminiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

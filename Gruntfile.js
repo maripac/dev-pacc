@@ -226,6 +226,17 @@ module.exports = function (grunt) {
                 files: {
                     '<%= yeoman.src %>/': ['<%= yeoman.src %>/templates/pages/blog/*.hbs']
                 }
+            },
+            meta_web: {
+                options: {
+                    flatten: true,
+                    layout: '<%= yeoman.src %>/templates/layouts/meta_web-layout.hbs',
+                    partials: '<%= yeoman.src %>/templates/partials/*.hbs'
+                },
+                
+                files: {
+                    '<%= yeoman.src %>/': ['<%= yeoman.src %>/templates/pages/meta_web/*.hbs']
+                }
             }
         },
         useminPrepare: {

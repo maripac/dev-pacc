@@ -1,0 +1,77 @@
+//@import 'normalize/normalize';
+@import 'bourbon/dist/bourbon';
+
+@import'settings/neat'; // My custom neat settings. This must be imported before neat.
+
+@import 'neat/app/assets/stylesheets/neat';
+
+*{ 
+  margin: 0; 
+  padding: 0;
+}
+
+
+body {
+
+	
+    //font-family: 'quattrocento_reg';
+    //font-family: 'alte_haas_groteskregular';
+    //font-family: 'alte_haas_groteskbold';
+    //font-family: 'arvoregular';
+	line-height: 1.5em;
+  	@include outer-container;	
+
+	text-align: center;
+	h1{
+
+    font-family: 'isminiregular';
+    //font-family: 'fedraserifb_bookexpertregular';
+    //font-family: 'alte_haas_groteskbold';
+		@include span-columns(12);
+		padding-top:0.275em;
+		font-size:6.5em;
+		height:1em;
+	}
+
+	h2{
+	font-family: 'alte_haas_groteskregular';
+	margin-bottom:0.25em;
+
+	}
+
+	h4{
+	font-family: 'alte_haas_groteskregular';
+	padding:2.125em 4.125em 2.125em 6.125em;
+	//font-family: 'alte_haas_groteskbold';
+	color:red;
+	//text-transform: uppercase;
+	text-align: left;
+
+	}
+
+	.xtres{
+		@include span-columns(5);
+		@include shift(3);
+	}
+	.utopia{
+		margin: 0 2em;
+	}
+	&:before{
+		opacity: 0;
+	}
+}
+
+
+html{
+	&:hover{
+		body{
+			background-image: url('../images/baseline-grid24x16.png');
+			&:before{
+				opacity: $visual-grid-opacity;
+
+			}
+		}
+	}
+}
+
+
